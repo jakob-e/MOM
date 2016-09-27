@@ -1,10 +1,11 @@
 <h1>MOM (Media Ordering Mixin)</h1>
-<p>Coming up before 2017 (I hope)</p<
+<p>Coming up before 2017 (I hope)</p>
 <img src="https://cloud.githubusercontent.com/assets/1699461/18881869/4c4a8a08-84dd-11e6-81e9-62b77addc188.jpg" width="100%"/>
 
 
+
 <h2>Stuff to include</h2> 
-<pre>
+````SCSS
 //  Convert number to ratio  ratio(1.7777778) =>   16/9 
 @function ratio($x, $y: null){
     @if not $y {
@@ -23,4 +24,4 @@
     @else if $x == round($x) and $y == round($y){ @return #{$x}/#{$y}; }
     @warn 'X and Y must be integers'; @return false;
 }
-</pre>
+````
